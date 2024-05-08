@@ -4,10 +4,10 @@
 import mysql from "mysql2/promise";
 
 const dbConnection = await mysql.createConnection({
-    host: 'localhost',
+    host: '84.32.214.92',
     database: 'stvcrm',
-    user: 'root',
-    //password: 'password',
+    user: 'crmuser',
+    password: 'stvcrm2',
 });
 
 export default dbConnection;
