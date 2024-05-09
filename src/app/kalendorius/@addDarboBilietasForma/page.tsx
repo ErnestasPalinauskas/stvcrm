@@ -13,7 +13,7 @@ const AddDarboBilietasForm = () => {
   const { register, handleSubmit, control } = useForm();
 
   const formatDateToMySQL = (date: any) => {
-    date.setHours(12, 0, 0, 0); // Set the time to noon
+    date.setHours(12, 0, 0, 0);
     return date.toISOString().slice(0, 19).replace("T", " ");
   };
 
